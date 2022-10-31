@@ -17,4 +17,4 @@ class DatePicker:
 
     def select_date_of_bday_1(self, date):
         modifier_key = Keys.COMMAND if sys.platform == 'darwin' else Keys.CONTROL
-        self.element.send_keys(modifier_key + 'a' + Keys.NULL).type(date)
+        self.element.send_keys(modifier_key + 'a' + Keys.NULL).type(date).press_enter()
